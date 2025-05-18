@@ -90,8 +90,8 @@ int main() {
         }
         nl; nl;
 
-        cout<< "Average Waiting Time = " << avgWT/n; nl;
-        cout<< "Average Turnaround Time = " << avgTAT/n; nl; nl;
+        cout<< "Average Waiting Time = " << (float)avgWT/n; nl;
+        cout<< "Average Turnaround Time = " << (float) avgTAT/n; nl; nl;
 
         cout<<"Gantt Chart: "; nl;
 
