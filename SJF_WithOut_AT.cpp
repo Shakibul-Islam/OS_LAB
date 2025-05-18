@@ -19,17 +19,33 @@ int main() {
     }
 
     // sorting According their Burst Time Because it is SJF CPU scuddling
-    for(int i=0 ; i<n; i++){    // i = Previous row number
+    for(int i=0 ; i < n; i++){    // i = Previous row number
         int index = i;              // Let i is the Smallest Burst Time
         for(int j = i+1; j<n; j++){
-            if(A[j][1] <= A[i][1] ){
+            if(A[j][1] <= A[index][1] ){
                 index = j;
             }
         }
-        
-        swap(A[i][1], A[index][1]); // swap Burst Time
 
-        swap(A[i][0], A[index][0] ); // Process number is also swapped
+        swap(A[i][1], A[index][1]); // swap Burst Time
+    
+        swap(A[i][0], A[index][0]); // swap Process Number
+
+        
+        
+        // int temp = 0;
+
+        // temp = A[i][1]; // swap Burst Time
+        // A[i][1] = A[index][1];
+        // A[index][1] = temp;
+
+        // temp = A[i][0]; // swap Process Number
+        // A[i][0] = A[index][0];
+        // A[index][0] = temp;
+
+        
+        
+       
 
     }
 
